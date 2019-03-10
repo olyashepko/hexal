@@ -1,3 +1,42 @@
+
+.wrapper {
+    flex: 1020px;
+    height: 1732px;
+    justify-self: center;
+}
+body {
+    display: flex;
+    justify-items: center;
+    margin:0;
+}
+.side {
+   flex:auto;
+}
+.side-nav {
+    background-color: #323232;
+    height: 63px;
+}
+.side-hex {
+    background-color: #ffffff;
+    height: 764px;
+}
+.side-about {
+    background-color: #2eb398;
+    height: 341px;
+}
+.side-connect {
+    background-color: #323232;
+    height: 564px;
+}
+.side-foot {
+    background-color: #222222;
+    height: 43px;
+}
+
+
+
+/* Navigation */
+
 h1{
     display: none;
 }
@@ -5,7 +44,6 @@ h1{
     background-color: #323232;
     
 }
-
 .menu {
     display: flex;
     justify-content: center;
@@ -30,7 +68,6 @@ h1{
 	-webkit-border-radius: 2.5px;
 	border-radius: 2.5px;
 }
-
 .item a {
     font-family: "Lato";
     font-size: 7.21379pt;
@@ -46,15 +83,42 @@ h1{
 .item img {
     align-self: flex-end;
 }
+.triangle {
+	width: 100px;
+	background: #323232;
+    position: relative;
+    align-self: center;
+}
+.triangle:after {
+	content: "";
+	position: absolute;
+	bottom: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+    border-top: 25px solid #323232;
+    z-index: 10;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    height: 63px;
+}
+
+
+
+/* Hexagon */
 .hexagon-container {
     background-color: #ffffff;
     border-top: 1px solid #e4e9eb;
     border-bottom: 1px solid #e4e9eb;
     display: flex;
     flex-direction: column;
-    margin:10px;
+    margin:12px 30px;
+    padding: 20px 0px;
 }
-
 .hexagon {
     width: 182px;
     height: 209px;
@@ -119,23 +183,6 @@ h1{
 #pic13 {
     background-image: url("assets/Layer\ 42@1X.png");
 }
-#author {
-    background-image: url("assets/Image@1X.png")
-}
-
-address li:nth-child(1) {
-    list-style-image: url("assets/location@1X.png")
-}
-address li:nth-child(2) {
-    list-style-image: url("assets/phone@1X.png")
-}
-address li:nth-child(3) {
-    list-style-image: url("assets/mail@1X.png")
-}
-.hexagon-container {
-    
-    
-}
 .row1, .row2, .row3 {
     display: flex;
     justify-content: center;
@@ -145,7 +192,23 @@ address li:nth-child(3) {
 .row1, .row2 {
     margin-bottom: -76px;
 }
-
+.scroll div {
+    width: 6px;
+    height: 6px;
+    background-color: #ddd2c5;
+    display:inline-block;
+    
+}
+.scroll div:nth-child(3) {
+    background-color: #8b8784;
+}
+.scroll {
+    padding:85px 0px 0px;
+}
+/* About me */
+#author {
+    background-image: url("assets/Image@1X.png")
+}
 .info h3 {
     font-family: "Maven Pro";
     font-size: 30pt;
@@ -161,24 +224,20 @@ address li:nth-child(3) {
     font-size: 12pt;
     color: rgba(215, 252, 245, 255);
 }
-
-
 .info {
     background-color: #2eb398;
     display:flex;
     justify-content: center;
     align-content: center;
     padding:20px 0px;
-    height: 395px;
-    
-    
+    height: 341px;
+    box-sizing: border-box;
 }
 article {
     border-right: 1px solid #219d84;
     border-left: 1px solid #219d84;
     width: 90%;
     display: flex;
-    
 }
 article .hexagon {
     min-width: 180px;
@@ -189,7 +248,22 @@ article .description {
     flex-direction: column;
     justify-content: center;
 }
+.description div h3,h4{
+    margin: 0px;
+}
 
+
+
+/* Connection */
+address li:nth-child(1) {
+    list-style-image: url("assets/location@1X.png")
+}
+address li:nth-child(2) {
+    list-style-image: url("assets/phone@1X.png")
+}
+address li:nth-child(3) {
+    list-style-image: url("assets/mail@1X.png")
+}
 .links-connect p {
     width:25px;
     height: 24px;
@@ -201,21 +275,21 @@ article .description {
     padding-right: 25px;
     
 }
-.description div h3,h4{
-    margin: 0px;
-}
 .contacts {
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: #323232;
+    
 }
 .contacts-wrapp {
     border-bottom: 1px solid #2b2b2b;
     border-top: 1px solid #2b2b2b;
-    margin: 20px;
+    margin: 13px 0px 11px; 
     display:flex;
     flex-direction: column;
+    height: 540px;
+    box-sizing: border-box;
     
 }
 .contact-form {
@@ -227,22 +301,27 @@ article .description {
     padding-right:30px;
     display:flex;
     flex-direction:column;
-    
+    margin: 0 0 0 120px;
 }
 .address {
     width: 220px;
-    align-self:flex-start;
+    justify-self:center;
+
 }
 .contact-text h3{
     font-family: "Maven Pro";
     font-size: 30pt;
     color: rgba(224, 224, 224, 255);
+    margin: 30px 0px 2px 121px;
+    box-sizing: border-box;
     
 }
 .contact-text p{
     font-family: "Maven Pro";
     font-size: 18pt;
     color: rgba(190, 190, 190, 255);
+    margin:0 0 20px 121px;
+    box-sizing: border-box;
     
 }
 .in-touch-form fieldset input, textarea{
@@ -253,10 +332,17 @@ article .description {
     display:block;
     width: 100%;
     margin-bottom: 20px; 
-    
+    padding:15px 13px;
+    box-sizing: border-box;
+    height: 38px;
 }
+.in-touch-form fieldset textarea {
+    height: 150px;
+}
+
 .in-touch-form fieldset{
     border:none;
+    padding: 0;
 }
 .button-submit {
     width: 90px;
@@ -274,7 +360,7 @@ article .description {
     font-family: "Lato";
     font-size: 12pt;
     color: rgba(224, 224, 224, 255);
-
+    margin: 0px 0px 41px;
 }
 address ul li {
     font-family: "Lato", sans-serif;
@@ -282,49 +368,20 @@ address ul li {
     color: rgba(224, 224, 224, 255);
     font-weight: bold;
 }
-.wrapper {
-    width: 1020px;
-    height: 1732px;
-}
-body {
-    display: flex;
-    justify-content: center;
-}
+
 .copyright {
     background-color: #222222;
+    height: 43px;
+    
     
 }
 .copyright p{
     font-family: "Maven Pro";
     font-size: 8.65655pt;
     color: rgba(69, 69, 69, 255);
+    padding:15px 39px;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.triangle {
-	width: 100px;
-	
-	background: #323232;
-    position: relative;
-    
-    align-self: center;
-    
-}
 
-.triangle:after {
-	content: "";
-	position: absolute;
-	bottom: -25px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-    border-top: 25px solid #323232;
-    z-index: 10;
-    
-}
-header {
-    display: flex;
-    flex-direction: column;
-    height: 63px;
-}
