@@ -89,6 +89,13 @@ h1{
     position: relative;
     align-self: center;
 }
+
+.triangle:after {
+    
+    background-color: #ffffff;
+    z-index: 5;
+    
+}
 .triangle:after {
 	content: "";
 	position: absolute;
@@ -101,6 +108,7 @@ h1{
     border-top: 25px solid #323232;
     z-index: 10;
 }
+
 header {
     display: flex;
     flex-direction: column;
@@ -205,6 +213,15 @@ header {
 .scroll {
     padding:85px 0px 0px;
 }
+.border-hex {
+    border-right: 1px solid #e4e9eb;
+    margin: 70px 12px 71px -11px;
+}
+.border-hex-end {
+    border-left: 1px solid #e4e9eb;
+    margin: 70px -12px 71px 11px;
+}
+
 /* About me */
 #author {
     background-image: url("assets/Image@1X.png")
@@ -251,7 +268,18 @@ article .description {
 .description div h3,h4{
     margin: 0px;
 }
-
+.links-connect p {
+    width:25px;
+    height: 24px;
+    
+    
+}
+.links-connect {
+    align-self: flex-end;
+    padding-right: 25px;
+    display: flex;
+    
+}
 
 
 /* Connection */
@@ -264,17 +292,7 @@ address li:nth-child(2) {
 address li:nth-child(3) {
     list-style-image: url("assets/mail@1X.png")
 }
-.links-connect p {
-    width:25px;
-    height: 24px;
-    display: inline-block;
-    margin-left: -5px;
-}
-.links-connect {
-    align-self: flex-end;
-    padding-right: 25px;
-    
-}
+
 .contacts {
     display: flex;
     justify-content: center;
