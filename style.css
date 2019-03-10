@@ -152,43 +152,43 @@ header {
     background-repeat: no-repeat;
     background-position: 50%;
 }
-#pic1 {
+.pic1 {
     background-image: url("assets/Layer\ 33@1X.png");
 }
-#pic2 {
+.pic2 {
     background-image: url("assets/Layer\ 31@1X.png");
 }
-#pic3 {
+.pic3 {
     background-image: url("assets/Layer\ 34@1X.png");
 }
-#pic4 {
+.pic4 {
     background-image: url("assets/Layer\ 35@1X.png");
 }
-#pic5 {
+.pic5 {
     background-image: url("assets/Layer\ 36@1X.png");
 }
-#pic6 {
+.pic6 {
     background-image: url("assets/Layer\ 44@1X.png");
 }
-#pic7 {
+.pic7 {
     background-image: url("assets/Layer\ 37@1X.png");
 }
-#pic8 {
+.pic8 {
     background-image: url("assets/Layer\ 38@1X.png");
 }
-#pic9 {
+.pic9 {
     background-image: url("assets/Layer\ 39@1X.png");
 }
-#pic10 {
+.pic10 {
     background-image: url("assets/Layer\ 40@1X.png");
 }
-#pic11 {
+.pic11 {
     background-image: url("assets/Layer\ 41@1X.png");
 }
-#pic12 {
+.pic12 {
     background-image: url("assets/Layer\ 43@1X.png");
 }
-#pic13 {
+.pic13 {
     background-image: url("assets/Layer\ 42@1X.png");
 }
 .row1, .row2, .row3 {
@@ -356,6 +356,7 @@ address li:nth-child(3) {
 }
 .in-touch-form fieldset textarea {
     height: 150px;
+    border: none;
 }
 
 .in-touch-form fieldset{
